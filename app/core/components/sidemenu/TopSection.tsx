@@ -10,6 +10,7 @@ const TopSection: FC<any> = () => {
   return (
     <div className="sidemenu__top">
       {mainLinks.map((link, index) => {
+        console.table(link);
         return <TopSectionItem link={link} key={`${link.id}-${index}`} />;
       })}
     </div>

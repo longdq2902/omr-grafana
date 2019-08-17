@@ -18,6 +18,8 @@ export default function BottomSection() {
       profileNode.showOrgSwitcher = true;
     }
   }
+  const x: number = bottomNav.map(x => x.id).indexOf('help');
+  bottomNav.splice(x,1);
 
   return (
     <div className="sidemenu__bottom">
